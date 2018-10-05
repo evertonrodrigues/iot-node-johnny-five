@@ -1,6 +1,6 @@
 const fs = require('fs');
 require('dotenv').config()
-const configFilePath = './StandardFirmataWiFi/wifiConfig.h';
+const configFilePath = './device/src/wifiConfig.h';
 let wifiConfigFile = fs.readFileSync(configFilePath, 'utf8');
 
 const config = new Map([

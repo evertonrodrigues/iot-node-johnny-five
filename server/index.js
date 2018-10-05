@@ -9,9 +9,11 @@ const context = {
 const app = require('./app')(context);
 const board = require('./board')(context);
 
+const port = process.env.SERVER_PORT || 3000;
+
 board.on("ready", () =>{
-  app.listen(3000, () => {    
-        console.log('Api running...');
+  app.listen(port, () => {    
+        console.log(`Api running on port ${port}`);
     });    
 });
 

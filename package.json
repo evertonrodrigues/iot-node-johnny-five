@@ -2,10 +2,27 @@
   "name": "iot-node-johnny-five",
   "version": "1.0.0",
   "scripts": {
-    "setup": "node scripts/setup.js",
-    "start": "node server/index.js"
+    "upload": "node scripts/config-device-wifi.js && ./scripts/pio/upload.sh",
+    "start": "node server/index.js",
+    "postinstall": "./scripts/pio/setup.sh"
   },
-  "keywords": ["iot","johnny-five","firmata","nodejs","express","wifi","esp8266","nodemcu","blink","standardfirmata","standardfirmatawifi"],
+  "keywords": [
+    "iot",
+    "johnny-five",
+    "firmata",
+    "nodejs",
+    "express",
+    "wifi",
+    "esp8266",
+    "nodemcu",
+    "blink",
+    "relay",
+    "standardfirmata",
+    "standardfirmatawifi",
+    "platformio",
+    "pio",
+    "arduino cli"
+  ],
   "author": "everton rodrigues",
   "license": "ISC",
   "dependencies": {

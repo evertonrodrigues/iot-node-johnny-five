@@ -116,7 +116,7 @@
 
 // STEP 3 [REQUIRED for all boards and shields]
 // replace this with your wireless network SSID
-char ssid[] = "everton"; //${ssid_pattern}
+char ssid[] = ""; //${ssid_pattern}
 
 // STEP 4 [OPTIONAL for all boards and shields]
 // If you want to use a static IP (v4) address, uncomment the line below. You can also change the IP.
@@ -146,7 +146,7 @@ char ssid[] = "everton"; //${ssid_pattern}
 #define WIFI_WPA_SECURITY
 
 #ifdef WIFI_WPA_SECURITY
-char wpa_passphrase[] = "qwe123zxc"; //${wpa_passphrase_pattern}
+char wpa_passphrase[] = ""; //${wpa_passphrase_pattern}
 #endif  //WIFI_WPA_SECURITY
 
 
