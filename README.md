@@ -94,4 +94,4 @@ This project show how to create a IoT solution with almost zero knowledgment on 
     - http://wifinodebot.blogspot.com/2016/02/blink-led-over-wifi-with-nodejs-johnny.html
     - https://www.instructables.com/id/ESP8266-Firmata-J5-NodeBot/
     - https://diyprojects.io/connecting-esp8266-blynk-johnny-five-firmata-wifi/#.W6g7PXVKg-Z
-    -https://docs.platformio.org/en/latest/core.html
+    - https://docs.platformio.org/en/latest/core.html
