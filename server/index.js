@@ -1,9 +1,8 @@
 require('dotenv').config()
 const EventEmitter = require('events');
-class BoardEmitter extends EventEmitter { }
 
 const context = {
-    boardEvents : new BoardEmitter()
+    boardEvents : new EventEmitter()
 }
 
 const app = require('./app')(context);

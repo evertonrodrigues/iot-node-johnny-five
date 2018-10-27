@@ -1,7 +1,6 @@
 const EtherPortClient = require("etherport-client").EtherPortClient;
 const five = require("johnny-five");
-const relay = require('./components/relay');
-const led = require('./components/led');
+const components = require('./components');
 
 module.exports = (context) => {
 
@@ -17,10 +16,7 @@ module.exports = (context) => {
 
     board.on("ready", function () {
         console.log('Board ready');
-
-        //relay(context);
-
-        led(this, context);      
+        components(board,context);          
     });
 
     return board;
